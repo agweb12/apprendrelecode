@@ -1,0 +1,18 @@
+#------------- le serveur doit suivre les liens symboliques
+Options +FollowSymlinks
+
+#------------- demarrage du moteur de réécriture d'url
+RewriteEngine on
+
+#------------- règles de réécriture d'url
+RewriteRule ^inscription$    register.php
+RewriteRule ^connexion$    login.php
+RewriteRule ^intervention$     film.php
+RewriteRule ^series$     series.php
+RewriteRule ^accueil$     index.php
+RewriteRule ^recherche$    search.php
+RewriteRule ^profil$    profile.php
+RewriteRule ^deconnexion$    logout.php
+RewriteRule ^authentification$    authentification.php
+RewriteRule ^entite-([0-9]+)-([a-za-zA-Z0-9\-]*)$     entity.php?id=$1&slug=$2
+RewriteRule ^categorie-([0-9]+)-([a-za-zA-Z0-9\-]*)$     category.php?id=$1&slug=$2

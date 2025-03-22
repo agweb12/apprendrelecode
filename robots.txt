@@ -1,0 +1,10 @@
+# Robot Exclusion file -- robots.txt
+
+user-agent: *
+Disallow: /profile.php
+Disallow: /includes/classes/
+Disallow: /includes/config.php
+Disallow: /includes/config2.php
+Disallow: /ajax/
+
+Sitemap: https://www.metmatimaamar.com/sitemap.xml
